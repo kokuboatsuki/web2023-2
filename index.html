@@ -4,7 +4,17 @@
         <meta charset="UTF-8">
         <title> 情報学特論Ⅱ 秋学期2023</title>
         <link rel="stylesheet" href="mystyle.css"><script src="myjs.js"></script> <!-- この行を追加 -->
-        <script src="ex6-1.js"></script>    
+        <link rel="stylesheet" href="imagechange.css">
+        <script src="ex6-1.js"></script>
+        <script src="ex6-5.js"></script>
+        <script src="ex6-6.js"></script>
+        <script src="ex6-7.js"></script>
+        <script src="ex6-8.js"></script>  
+        <script src="ex6-88.js"></script>  
+        <script src="ex6-9.js"></script>  
+        <script src="ex6-10.js"></script>
+        <script src="ex6-10-2.js"></script>          
+        <script src="ex6-11.js"></script>  
     </head>
         <body>
             <h1>Hello World</h1>
@@ -89,5 +99,58 @@
         -->
         <input type="button" value="ここをクリック" onclick="sayhello61();sayhello61();">
         <input type="button" value="ここをクリック" onclick="saygoodbye61();">
+        <br>
+        <h1>変数の練習</h1>
+            <input type="button" value="あいさつ" onclick="sayhello65();">
+            <input type="button" value="太郎" onclick="taro65();">
+            <input type="button" value="花子" onclick="hanako65();">
+        <br>
+        <h1>練習問題6.6</h1>
+            <input type="button" value="あいさつ" onclick="sayhello66();">
+            <input type="button" value="太郎" onclick="taro66();">
+            <input type="button" value="花子" onclick="hanako66();">        
+        <br>
+        <h1>練習問題6.7 引数の練習</h1>
+            <input type="button" value="あいさつ" onclick="sayhello67();">
+            <input type="button" value="太郎" onclick="someone('太郎');">
+            <input type="button" value="花子" onclick="someone('花子');">
+            <input type="button" value="レイ" onclick="someone('レイ');">
+            <input type="button" value="シンジ" onclick="someone('シンジ');">
+            <input type="button" value="アスカ" onclick="someone('アスカ');">
+        <br>
+        <h1>練習問題6.8 JavaScriptによる変更の練習</h1>
+            <input type="button" value="あいさつ" onclick="sayhello68();">
+            <input type="button" value="太郎" onclick="taro68();">
+            <input type="button" value="花子" onclick="hanako68();">
+            <p id="who68">World</p>
+        <br>
+        <h1>練習問題6.88 InnerHTMLによる変更の練習</h1>
+            <input type="button" value="画像変更" onclick="gazo688();">
+            <p id="who688">
+                <img src="./nahi1.png" alt="オフ" height="700">
+            </p>
+        <br>
+        <h1>練習問題6.9 JavaScriptによるページの変更</h1>
+            <div id="txt1">
+                <input type="button" value="テキストの変更" onclick="txtchange1();">
+            城西大学</div>
+        <br>
+        <h1>練習問題6.10 JavaScriptによるページの変更と元に戻す</h1>
+            <input type="button" value="画像の変更" onclick="imgchange1();">
+            <img src='./nahi1.png' id="logo" alt="nahi" height="700">          
+            <input type="button" value="元に戻す" onclick="imgchange2()">
+        <br>
+        <h1>練習問題6.10-2 CSSによる画像のサイズ制御とJavaScriptによるページの変更と元に戻す</h1>
+            <input type="button" value="画像の変更" onclick="imgchange3();">
+            <img src='./image1.jpg' id="logo2" alt="Josai Logo" class="imagechange">
+            <input type="button" value="元に戻す" onclick="imgchange4()">
+        <br>
+        <h1>練習問題6.11 タイマーイベント(setInterval)による実行</h1>
+            <from name="timer">
+                <input type="button" value="スタート" onclick="startfnc()">
+                <br>
+                <input type="text" name="moji" size="30" value="">
+            </from>
+        <h1>練習問題6.12 タイマーイベントによる実行</h1>                                           
     </body>
 </html>
