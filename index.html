@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title> 情報学特論Ⅱ 秋学期2023</title>
-        <link rel="stylesheet" href="mystyle.css"><script src="myjs.js"></script> <!-- この行を追加 -->
+        <link rel="stylesheet" href="mystyle.css"><!--script src="myjs.js">--></script> <!-- この行を追加 -->
         <link rel="stylesheet" href="imagechange.css">
         <script src="ex6-1.js"></script>
         <script src="ex6-5.js"></script>
@@ -14,7 +14,8 @@
         <script src="ex6-9.js"></script>  
         <script src="ex6-10.js"></script>
         <script src="ex6-10-2.js"></script>          
-        <script src="ex6-11.js"></script>  
+        <script src="ex6-12.js"></script>
+        <script src="ex6-13.js"></script>  
     </head>
         <body>
             <h1>Hello World</h1>
@@ -145,12 +146,22 @@
             <img src='./image1.jpg' id="logo2" alt="Josai Logo" class="imagechange">
             <input type="button" value="元に戻す" onclick="imgchange4()">
         <br>
-        <h1>練習問題6.11 タイマーイベント(setInterval)による実行</h1>
+        <h1>練習問題6.12 タイマーイベント(setInterval)による実行</h1>
             <from name="timer">
                 <input type="button" value="スタート" onclick="startfnc()">
                 <br>
                 <input type="text" name="moji" size="30" value="">
+            </from>    
+            <br>
+        <h1>練習問題6.13 タイマーイベント(setTimeout)による実行</h1>
+            <from>
+                <input type="button" value="Timer" onclick="setTimeout('mes()',3000)">
             </from>
-        <h1>練習問題6.12 タイマーイベントによる実行</h1>                                           
+        <h1>練習問題6-13 タイマーイベント(setTimeout)による表示</h1>
+            <from name="timer13">
+                <input type="button" value="スタート" onclick="hyoji13()">
+                <br>
+                <input type="text" name="moji13" size="30" value="">
+            </from>        
     </body>
 </html>
