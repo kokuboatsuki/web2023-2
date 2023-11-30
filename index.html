@@ -15,7 +15,19 @@
         <script src="ex6-10.js"></script>
         <script src="ex6-10-2.js"></script>          
         <script src="ex6-12.js"></script>
-        <script src="ex6-13.js"></script>  
+        <script src="ex6-13.js"></script>
+        <script src="ex6-14.js"></script>
+        <script src="ex7-1.js"></script>
+        <script src="ex7-2.js"></script>
+        <script src="ex7-3.js"></script>
+        <script src="ex7-4.js"></script>
+        <script src="ex7-5.js"></script>  
+        <script src="ex7-6.js"></script>
+        <script src="ex7-7.js"></script>
+        <script src="ex7-8.js"></script>
+        <script src="ex7-9.js"></script>
+        <script src="ex7-10.js"></script>
+        <script src="ex7-11.js"></script>
     </head>
         <body>
             <h1>Hello World</h1>
@@ -147,21 +159,101 @@
             <input type="button" value="元に戻す" onclick="imgchange4()">
         <br>
         <h1>練習問題6.12 タイマーイベント(setInterval)による実行</h1>
-            <from name="timer">
+            <form name="timer12">
                 <input type="button" value="スタート" onclick="startfnc()">
                 <br>
                 <input type="text" name="moji" size="30" value="">
-            </from>    
+            </form>    
             <br>
         <h1>練習問題6.13 タイマーイベント(setTimeout)による実行</h1>
-            <from>
+            <form>
                 <input type="button" value="Timer" onclick="setTimeout('mes()',3000)">
-            </from>
-        <h1>練習問題6-13 タイマーイベント(setTimeout)による表示</h1>
-            <from name="timer13">
+            </form>
+            <br>
+            <form name="timer13">
                 <input type="button" value="スタート" onclick="hyoji13()">
                 <br>
                 <input type="text" name="moji13" size="30" value="">
-            </from>        
+            </form>
+        <br>
+        <h1>練習問題6-14 3秒たったら元に戻す</h1>
+            <img src='./nahi1.png' id="logo3" alt="nahi" height="700">
+            <form name="timer14">
+                <input type="button" value="スタート" onclick="kirikae1();setTimeout('kirikae2()',3000)">
+            </form>
+        <br>
+        <h1>練習問題7-1 テキスト入力の練習</h1>
+            <input type="button" value="あいさつ" onclick="sayhello71();">
+            <p>誰？<input type="tex" id="who71"></p>
+        <br>
+        <h1>練習問題7-2 足し算</h1>
+            <p>
+                <input type="text" id="input1"> + <input type="text" id="input2">
+                <input type="button" value="計算" onclick="add();">
+            </p>
+        <br>
+        <h1>練習問題7-3 ボディマス指数の計算</h1>
+            <p>
+                <label>あなたの身長 (cm)</label>
+                <input type="text" id="bmi1">
+                <br>
+                <label>あなたの体重 (kg)</label>
+                <input type="text" id="bmi2">
+                <input type="button" value="計算" onclick="add();">
+            </p>
+        <br>
+        <h1>練習問題7-4 なぞなぞ</h1>
+            <p>目を閉じていないと見られないものはなーに？</p>
+            <p>
+                答（漢字１文字で）:<input type="text" id="answer4">
+                <input type="button" value="解答" onclick="nazo();">
+            </p>
+        <br>
+        <h1>練習問題7-5 なぞなぞ（はずれ付き）
+        </h1>
+            <p>目を閉じていないと見られないものはなーに？</p>
+            <p>
+                答（漢字１文字で）:<input type="text" id="answer5">
+                <input type="button" value="解答" onclick="nazo5();">
+            </p>
+        <br>
+        <h1>練習問題7-6 なぞなぞ（入れ替え）</h1>
+            <p>目を閉じていないと見られないものはなーに？</p>
+            <p>
+                答（漢字１文字で）:<input type="text" id="answer6">
+            <input type="button" value="解答" onclick="nazo6();">
+        <br>
+        <h1>練習問題7-7 なぞなぞ（置き換わり）</h1>
+            <p>目を閉じていないと見られないものはなーに？</p>
+            <p>
+                答（漢字１文字で）:<input type="text" id="answer77">
+            <input type="button" value="解答" onclick="nazo77();">
+        <br>
+        <h1>練習問題7-8 なぞなぞ（夢入力）</h1>
+            <p>目を閉じていないと見られないものはなーに？</p>
+            <p>
+                答（漢字１文字で）:<input type="text" id="answer8">
+            <input type="button" value="解答" onclick="nazo8();">
+        <br>
+        <h1>練習問題7-9 なぞなぞ（複雑化）</h1>
+            <p>目を閉じていないと見られないものはなーに？</p>
+            <p>
+                答:<input type="text" id="answer9">
+            <input type="button" value="解答" onclick="nazo9();">
+        <br>
+        <h1>練習問題7-10 ボディマス指数表示</h1>
+        <p>
+            <label>あなたの身長 (cm)</label>
+            <input type="text" id="bmi3">
+            <br>
+            <label>あなたの体重 (kg)</label>
+            <input type="text" id="bmi4">
+            <input type="button" value="計算" onclick="add10();">
+        <br>
+        <h1>練習問題7-11 うるう年計算</h1>
+            <input type="text" id="uru1">
+            <input type="button" value="計算" onclick="uru01();">
+        <br>
+        </p>                    
     </body>
 </html>
